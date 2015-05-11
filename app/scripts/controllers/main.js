@@ -1,17 +1,16 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name clientApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the clientApp
- */
-angular.module('clientApp')
-  .controller('MainCtrl', function ($scope) {
+angular.module('clientApp').controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-  });
+    
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+		console.log(e); 
+    });
+
+});
