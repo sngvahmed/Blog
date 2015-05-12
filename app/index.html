@@ -8,22 +8,29 @@
     <meta name="author" content="">
     <title>Ahmed Nasser CV</title>
     <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
 </head>
 
 <body ng-app="clientApp" class="customBody">
-
+    <style type="text/css">
+        .custom_font{
+            font-family: 'Pacifico', cursive;
+            font-size: 30px
+        }
+    </style>
     <div id="wrapper">
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
     <ul class="sidebar-nav">
-        <li class="sidebar-brand"><a href="#"><table>
-            <td> &nbsp&nbsp&nbsp<span class="glyphicon glyphicon-home"></span> </td>
-            <td>&nbsp Home </td>
+        <li class="sidebar-brand"><a href="#/home"><table>
+            <td> &nbsp&nbsp<span class="glyphicon glyphicon-home"></span> </td>
+            <td class="custom_font">Home</td>
         </table></a></li>
-        <li> <a href="#">Portofoli</a> </li>
-        <li> <a href="#">Blogs</a></li>
-        <li> <a href="#">Contact</a></li>
+        <br/>
+        <li class="custom_font"> <a href="#">Portofoli</a> </li> <br/>
+        <li class="custom_font"> <a href="#">Blogs</a></li><br/>
+        <li class="custom_font"> <a href="#/contact">Contact</a></li>
     </ul>
     </div>
 
@@ -57,7 +64,7 @@
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/contact/contact.js"></script>
     <!-- endbuild -->
 
     <!-- Bootstrap Core CSS -->
