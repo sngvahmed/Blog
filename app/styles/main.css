@@ -102,8 +102,7 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #ffffff;
-    background-image: url("../img/nav.png");
+    background: #4A4841;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -205,7 +204,8 @@
 /* slider */
 body {
     overflow: auto;
-    background-image: url("../img/backGround.jpg");
+    /*background-image: url("../img/backGround.jpg");*/
+    background-color: #CFB54D
     background-position: right bottom, left top;
     background-repeat: repeat;
 }

@@ -2,11 +2,7 @@
 var MainCtrl = angular.module('clientApp');
 
 MainCtrl.controller('MainCtrl', function ($scope , $timeout) {
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-        console.log("menu");
-    });
+    
     $scope.slides = [
         {image: 'img/cover1.jpg', description: 'Image 00'},
         {image: 'img/cover2.jpg', description: 'Image 01'},
