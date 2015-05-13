@@ -17,46 +17,16 @@
 <!-- Portfolio section start -->
 <div class="section secondary-section " id="portfolio">
 
-    <div id="single-project">  
-    <div ng-repeat="value in project">
-    <!-- Start details for portfolio project 1 -->
-        {{value.rel}}
-	    <div ng-id="{{value.rel}}" class="toggleDiv row-fluid single-project">
-	        <div class="span6"> <image src="../images/Portfolio01.png" alt="project 1" /> </div>
-	        <div class="span6">
-	            <div class="project-description">
-	                <div class="project-title clearfix">
-	                    <h3>Webste for Some Client</h3>
-	                    <span class="show_hide close">
-	                        <i class="icon-cancel"></i>
-	                    </span>
-	                </div>
-	                <div class="project-info">
-	                    <div class="proj-info">
-	                        <span>Client</span>Some Client Name</div>
-	                    <div class="proj-info">
-	                        <span>Date</span>July 2013</div>
-	                    <div class="proj-info">
-	                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
-	                    <div class="proj-info">
-	                        <span>Link</span>http://examplecomp.com</div>
-	                </div>
-	                <p class="project_desc">Believe in yourself! Have faith in your abilities! Without a humble but reasonable confidence in your own powers you cannot be successful or happy.</p>
-	            </div>
-	        </div>
-	    </div>
-    </div>
-
 	<!-- End details for portfolio project 1 -->
     <ul id="portfolio-grid" class="thumbnails row">
         <div ng-repeat="value in project">
-        <li class="span3 web">
+        <div class="span3 web">
             <div class="thumbnail">
-                <image src="../images/Portfolio01.png" alt="project 1"/>
-                <a href="#single-project" class="more show_hide" ng-rel="#{{value.rel}}">
+                <image ng-src="{{value.source}}" alt="project 1"/>
+                <a href="#single-project" class="more show_hide" ng-rel="#first1">
                     <i class="icon-plus"></i>
                 </a>
-                <h3>Thumbnail label</h3>
+                <h3>{{value.name}}</h3>
                 <div class="mask"></div>
             </div>
         </li>

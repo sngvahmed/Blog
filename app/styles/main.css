@@ -205,8 +205,7 @@
 /* slider */
 body {
     overflow: auto;
-    /*background-image: url("../img/backGround.jpg");*/
-    background-color: #CFB54D
+    background-color: #DAD7D7;
     background-position: right bottom, left top;
     background-repeat: repeat;
 }
